@@ -191,6 +191,51 @@ st.markdown("""
     .signature-box:hover {
         opacity: 1;
     }
+    
+    /* --- UPLOADER COMPONENT FIX --- */
+    /* Fix the drag-and-drop box */
+    [data-testid="stFileUploadDropzone"] {
+        background-color: #FFFFFF !important;
+        border: 1px dashed #D4D4D8 !important;
+        border-radius: 6px !important;
+    }
+    [data-testid="stFileUploadDropzone"] div {
+        color: #52525B !important;
+    }
+    
+    /* Fix the uploaded file name and icon */
+    [data-testid="stUploadedFile"] {
+        background-color: #FFFFFF !important;
+        border: 1px solid #E4E4E7 !important;
+        border-radius: 6px !important;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.02) !important;
+    }
+    [data-testid="stUploadedFile"] div, 
+    [data-testid="stUploadedFile"] span, 
+    [data-testid="stUploadedFile"] svg {
+        color: #18181B !important;
+    }
+    
+    /* Fix the "Cross" Remove Button */
+    [data-testid="stUploadedFile"] button {
+        background: transparent !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        box-shadow: none !important;
+        width: auto !important;
+        height: auto !important;
+    }
+    [data-testid="stUploadedFile"] button:hover {
+        background: #F4F4F5 !important;
+        transform: none !important;
+    }
+    [data-testid="stUploadedFile"] button svg {
+        fill: #A1A1AA !important; /* Light grey cross */
+        transition: fill 0.2s ease;
+    }
+    [data-testid="stUploadedFile"] button:hover svg {
+        fill: #E63946 !important; /* Turns subtle red when hovered */
+    }
 </style>
 """, unsafe_allow_html=True)
 
