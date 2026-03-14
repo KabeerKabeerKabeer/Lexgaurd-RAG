@@ -43,7 +43,7 @@ Want to run LexGuard on your local machine?
 
 1. Clone the repository
 
-git clone https://github.com/YourUsername/LexGuard-RAG.git
+git clone https://github.com/KabeerKabeerKabeer/LexGuard-RAG.git
 cd LexGuard-RAG
 
 2. Install dependencies
