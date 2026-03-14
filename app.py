@@ -236,6 +236,26 @@ st.markdown("""
     [data-testid="stUploadedFile"] button:hover svg {
         fill: #E63946 !important; /* Turns subtle red when hovered */
     }
+    
+    /* --- UPLOADER COMPONENT FIX --- */
+    div[data-testid="stFileUploader"] {
+        background-color: #FFFFFF !important;
+        border-radius: 8px !important;
+    }
+    div[data-testid="stFileUploader"] * {
+        color: #18181B !important; /* Forces all text/icons inside to be dark */
+    }
+    div[data-testid="stFileUploader"] section {
+        background-color: #FAFAFA !important;
+        border: 1px dashed #D4D4D8 !important;
+    }
+    /* Fix the remove button */
+    div[data-testid="stUploadedFile"] button {
+        background: transparent !important;
+    }
+    div[data-testid="stUploadedFile"] button svg {
+        fill: #18181B !important; 
+    }
 </style>
 """, unsafe_allow_html=True)
 
