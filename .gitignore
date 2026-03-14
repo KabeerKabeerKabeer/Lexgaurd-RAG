@@ -1,0 +1,6 @@
+venv/
+.env
+db_legal/
+__pycache__/
+*.pyc
+.vscode/
